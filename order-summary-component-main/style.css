@@ -1,0 +1,120 @@
+:root {
+  /* Primary Colors */
+  --pale-blue: hsl(225, 100%, 94%);
+  --bright-blue: hsl(245, 75%, 52%);
+
+  /* Neutral */
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+}
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+}
+
+.fnt-lt {
+  font-weight: 500;
+}
+.fnt-med {
+  font-weight: 700;
+}
+.fnt-bold {
+  font-weight: 900;
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  height: 100vh;
+  width: 100%;
+  background: var(--pale-blue) url(images/pattern-background-desktop.svg)
+    no-repeat;
+  background-position: top center;
+  background-size: contain;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  height: 624px;
+  background: #fff;
+  width: 400px;
+  box-shadow: 0px 6px 17px -4px var(--desaturated-blue);
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 10px;
+  text-align: center;
+}
+.card-header img {
+  width: 100%;
+}
+.card-body {
+  margin-top: 2rem;
+}
+.card-body h2 {
+  color: #2b364f;
+  margin: 0;
+}
+.tagline {
+  margin: 1rem auto;
+  color: hsl(224, 23%, 55%);
+  width: 80%;
+}
+
+.plan-details {
+  background: var(--very-pale-blue);
+  width: 80%;
+  margin: 1rem auto;
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+  border-radius: 8px;
+  align-items: center;
+}
+
+.plan-details a {
+  color: var(--bright-blue);
+  text-align: right;
+}
+
+.current-plan {
+  display: flex;
+  flex-flow: column;
+}
+.current-plan .price {
+  color: var(--desaturated-blue);
+}
+
+.card-footer {
+  flex-grow: 1;
+}
+
+.proceed-button {
+  display: block;
+  text-decoration: none;
+  margin: 2rem auto;
+  width: 80%;
+  padding: 1rem;
+  border-radius: 8px;
+  border: none;
+  background: var(--bright-blue);
+  color: white;
+  box-shadow: 0px 8px 8px 0px hsla(224, 23%, 55%, 0.4);
+}
+
+.cancel-button {
+  color: var(--desaturated-blue);
+  text-decoration: none;
+}
+
+@media (max-width: 500px) {
+  .card {
+    width: 320px;
+  }
+}
