@@ -52,7 +52,7 @@ body {
   text-align: center;
 }
 .card-header img {
-  width: 100%;
+  display: block;
 }
 .card-body {
   margin-top: 2rem;
