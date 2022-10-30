@@ -1,42 +1,68 @@
 .Header {
-  display: flex;
-  align-items: center;
+	padding: 0 2rem;
+}
+.Container {
+  padding: 2.5rem 0;
+	display: flex;
+	align-items: center;
+  border-bottom: solid 1px var(--grayish-blue-soft);
 }
 
 .Logo h1 {
-  margin: 0;
+	margin: 0;
 }
 
 .Socials nav ul {
-  display: flex;
-  gap: 2rem;
-  list-style-type: none;
+	display: flex;
+  font-size: 14px;
+	gap: 2rem;
+	padding: 0;
+	list-style-type: none;
+	color: var(--dark-grayish-blue);
 }
 
 .Menu {
-  display: none;
+	border: none;
+	background: transparent;
+	display: none;
+	cursor: pointer;
+}
+
+.Avatar {
+	height: 3.5rem;
+	width: 3.5rem;
 }
 
 @media (max-width: 375px) {
-  .Menu {
-    display: block;
-    margin: 0 1rem;
+	.Menu {
+		display: block;
+		margin: 0 1rem;
+	}
+	.Header {
+		padding: 16px 8px;
+	}
+  .Container {
+		align-items: baseline;
   }
-  .Header {
-    padding: 16px 8px;
-    align-items: baseline;
-  }
-  .Socials {
-    position: fixed;
-    left: -140px;
-  }
-  .Socials nav ul {
-    flex-flow: column;
-  }
-  .Cart {
-    margin: 0 16px;
-  }
-  .Avatar {
-    margin: 0 16px;
-  }
+	.Socials {
+		position: fixed;
+		left: -140px;
+	}
+	.Socials nav ul {
+		flex-flow: column;
+	}
+	.Cart {
+		margin: 0 16px;
+	}
+	.Avatar {
+		height: 1.5rem;
+		width: 1.5rem;
+		margin: 0 16px;
+	}
+}
+
+@media (min-width: 1280px) {
+	.Container {
+		gap: 3rem;
+	}
 }
