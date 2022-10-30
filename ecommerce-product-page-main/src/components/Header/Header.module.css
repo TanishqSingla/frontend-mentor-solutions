@@ -1,0 +1,10 @@
+.Header {
+  display: flex;
+  align-items: center;
+}
+
+.Socials nav ul {
+  display: flex;
+  gap: 2rem;
+  list-style-type: none;
+}
