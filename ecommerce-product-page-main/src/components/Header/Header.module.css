@@ -3,8 +3,40 @@
   align-items: center;
 }
 
+.Logo h1 {
+  margin: 0;
+}
+
 .Socials nav ul {
   display: flex;
   gap: 2rem;
   list-style-type: none;
+}
+
+.Menu {
+  display: none;
+}
+
+@media (max-width: 375px) {
+  .Menu {
+    display: block;
+    margin: 0 1rem;
+  }
+  .Header {
+    padding: 16px 8px;
+    align-items: baseline;
+  }
+  .Socials {
+    position: fixed;
+    left: -140px;
+  }
+  .Socials nav ul {
+    flex-flow: column;
+  }
+  .Cart {
+    margin: 0 16px;
+  }
+  .Avatar {
+    margin: 0 16px;
+  }
 }
